@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button{
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #f3bf12de;
+            border: 2px solid #804545;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+         
 </head>
+
 <body>
-    mohd zaid 
+    <button id="btn">
+        Click me
+    </button>
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            alert('you clicked this button');
+        });
+    </script>
 </body>
 </html>
